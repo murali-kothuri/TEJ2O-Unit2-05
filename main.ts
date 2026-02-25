@@ -1,12 +1,13 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Murali Kothuri
+ * Created on: Feb 2026
+ * This program shows the temperature into kelvin
 */
 
 let currentTemperature: number
-let currentTemperatureIntoKelvin
+let currentTemperatureIntoKelvin: number
+
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
@@ -18,5 +19,5 @@ input.onButtonPressed(Button.A, function () {
 
   // output answer
   basic.clearScreen()
-  basic.showString('The temperature is: ' + currentTemperatureIntoKelvin.toString() + 'K.')
+  basic.showString('The temperature is: ' + currentTemperatureIntoKelvin.toString() + ' K.')
 })
